@@ -8,9 +8,15 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
 
+/**
+ * 对网络请求的api做封装
+ */
 object SunnyWeatherNetWork {
     private val placeService = ServiceCreator.create(PlaceService::class.java)
 
+    /**
+     * 发起网络请求
+     */
     suspend fun searchPlaces(query: String) = placeService.searchPlaces(query).await()
 
     private suspend fun <T> Call<T>.await(): T {

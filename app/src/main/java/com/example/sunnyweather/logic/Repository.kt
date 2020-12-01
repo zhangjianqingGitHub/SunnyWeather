@@ -6,6 +6,9 @@ import kotlinx.coroutines.Dispatchers
 import java.lang.Exception
 import java.lang.RuntimeException
 
+/**
+ * 仓库层统一封装入口
+ */
 object Repository {
     fun searchPlaces(query: String) = liveData(Dispatchers.IO) {
         val result = try {
