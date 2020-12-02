@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -7,9 +8,9 @@
     app:cardCornerRadius="4dp">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="wrap_content"
@@ -18,12 +19,12 @@
             android:layout_marginTop="20dp"
             android:text="生活指数"
             android:textColor="?android:attr/textColorPrimary"
-            android:textSize="20sp" />
+            android:textSize="20sp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20sp">
+            android:layout_marginTop="20dp">
 
             <RelativeLayout
                 android:layout_width="0dp"
@@ -43,23 +44,22 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/coldRiskImg"
-                    android:orientation="vertical">
-
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@id/coldRiskImg">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="感冒"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:text="感冒" />
 
                     <TextView
                         android:id="@+id/coldRiskText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:textColor="?android:attr/textColorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorPrimary" />
                 </LinearLayout>
 
             </RelativeLayout>
@@ -81,24 +81,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/dressingImg"
                     android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/dressingImg"
                     android:orientation="vertical">
-
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="感冒"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:text="穿衣" />
 
                     <TextView
                         android:id="@+id/dressingText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:textColor="?android:attr/textColorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorPrimary" />
                 </LinearLayout>
 
             </RelativeLayout>
@@ -127,24 +126,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/ultravioletImg"
                     android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/ultravioletImg"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="实时紫外线"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:text="实时紫外线" />
 
                     <TextView
                         android:id="@+id/ultravioletText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:textColor="?android:attr/textColorPrimary"
-                        android:textSize="16sp" />
-
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorPrimary" />
                 </LinearLayout>
 
             </RelativeLayout>
@@ -166,23 +164,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/carWashingImg"
                     android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/carWashingImg"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="洗车"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        android:text="洗车" />
 
                     <TextView
                         android:id="@+id/carWashingText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:textColor="?android:attr/textColorPrimary"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorPrimary" />
                 </LinearLayout>
 
             </RelativeLayout>

@@ -76,7 +76,7 @@ class WeatherActivity : AppCompatActivity() {
         }
 
         //右滑菜单
-        navbtn.setOnClickListener {
+        navBtn.setOnClickListener {
             drawerLayout.openDrawer(GravityCompat.START)
         }
 
